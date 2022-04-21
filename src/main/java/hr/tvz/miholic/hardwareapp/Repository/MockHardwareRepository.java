@@ -16,7 +16,7 @@ public class MockHardwareRepository implements HardwareRepository {
                     new Hardware("Nvidia GeForce GTX 1650 OC", "123123123231321", 10000.99, HardwareTypeEnum.GPU, 0),
                     new Hardware("Nvidia GeForce RTX 3090", "3222222", 100000, HardwareTypeEnum.GPU, 0),
                     new Hardware("Genious MK-500", "746453", 20, HardwareTypeEnum.OTHER, 250),
-                    new Hardware("Genious MK-500 Mechanical", "746453", 100.05, HardwareTypeEnum.OTHER, 20)
+                    new Hardware("Genious MK-500 Mechanical", "74643253", 100.05, HardwareTypeEnum.OTHER, 20)
 
             )
     );

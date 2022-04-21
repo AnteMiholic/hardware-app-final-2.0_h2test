@@ -4,9 +4,15 @@ public class HardwareDTO {
     private String name;
     private Double price;
 
-    public HardwareDTO(String name, double price) {
+    private String code;
+
+
+
+
+    public HardwareDTO(String name, Double price, String code) {
         this.name = name;
         this.price = price;
+        this.code = code;
     }
 
     public String getName() {
@@ -25,11 +31,11 @@ public class HardwareDTO {
         this.price = price;
     }
 
-    @Override
-    public String toString() {
-        return "HardwareDTO{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                '}';
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 }

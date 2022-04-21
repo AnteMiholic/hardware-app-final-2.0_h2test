@@ -1,5 +1,6 @@
 package hr.tvz.miholic.hardwareapp.Controllers;
 
+import hr.tvz.miholic.hardwareapp.Classes.Hardware;
 import hr.tvz.miholic.hardwareapp.Classes.HardwareDTO;
 import hr.tvz.miholic.hardwareapp.Commands.HardwareCommand;
 import hr.tvz.miholic.hardwareapp.Commands.PriceCommand;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("hardware")
+@CrossOrigin(origins = "http://localhost:4200")
 public class HardwareController {
 
     private final HardwareService hardwareService;
@@ -24,7 +26,11 @@ public class HardwareController {
 
     @GetMapping
     public List<HardwareDTO> getAllHardware(){
-        return hardwareService.findAll();
+        List<HardwareDTO> h = hardwareService.findAll();
+        for(HardwareDTO ha : h){
+            System.out.println(ha.toString());
+        }
+        return h;
     }
     /*
     @GetMapping(params = "code")

@@ -26,6 +26,7 @@ public class HardwareController {
 
     @GetMapping
     public List<HardwareDTO> getAllHardware(){
+
         List<HardwareDTO> h = hardwareService.findAll();
         for(HardwareDTO ha : h){
             System.out.println(ha.toString());
@@ -60,7 +61,7 @@ public class HardwareController {
 
     @GetMapping("/{code}")
     public ResponseEntity<HardwareDTO> getHardwareByCode(@PathVariable String code) {
-
+        System.out.println(code);
         return hardwareService.getByCode(code)
                 .map(
                         hardwareDTO -> ResponseEntity.status(HttpStatus.OK).body(hardwareDTO)

@@ -2,10 +2,12 @@ package hr.tvz.miholic.hardwareapp.Repository;
 
 import hr.tvz.miholic.hardwareapp.Classes.Hardware;
 import hr.tvz.miholic.hardwareapp.Enums.HardwareTypeEnum;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
 import java.util.stream.Collectors;
+
 
 @Repository
 public class MockHardwareRepository implements HardwareRepository {

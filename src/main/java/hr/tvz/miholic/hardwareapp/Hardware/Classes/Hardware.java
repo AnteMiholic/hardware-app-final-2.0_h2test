@@ -52,7 +52,9 @@ public class Hardware {
     public Hardware() {
 
     }
-
+    public String dostupnost(){
+        return "Ime: " + this.name + " - dostupno: " + this.amount;
+    }
     public String getName() {
         return name;
     }

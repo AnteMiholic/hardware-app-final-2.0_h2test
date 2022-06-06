@@ -5,7 +5,7 @@ insert into hardware (id, name, code, price, type, amount)
 values (2, 'i5 9500','123456789', 999.99, 'CPU', 20);
 
 insert into hardware (id, name, code, price, type, amount)
-values (3, 'Nvidia GeForce RTX 3090','568455625', 9999.99, 'GPU', 1);
+values (3, 'Nvidia GeForce RTX 3090','568455625', 9999.99, 'GPU', 0);
 
 insert into hardware (id, name, code, price, type, amount)
 values (4, 'Genious MK-500 Mechanical','9876542', 19.99, 'GPU', 100);

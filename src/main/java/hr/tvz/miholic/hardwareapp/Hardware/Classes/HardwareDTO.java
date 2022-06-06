@@ -38,4 +38,5 @@ public class HardwareDTO {
     public void setCode(String code) {
         this.code = code;
     }
+
 }
